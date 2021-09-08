@@ -1,119 +1,135 @@
 <html lang="ko">
+
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="initial-scale=1.0, width=device-width">
-	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>게임정보상세-보난자</title>
 
-	<link rel="stylesheet" href="./css/reset.css">
-	<link rel="stylesheet" href="./css/test.css"> 
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="/boots/assets/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="./css/test.css" rel="stylesheet">
 
-<!--알고리즘 관련 구글 태그 매니저 활용 방안 생각-->
+	<!--알고리즘 관련 구글 태그 매니저 활용 방안 생각-->
+	<!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="/boots/assets/js/jquery/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="/boots/assets/bootstrap/js/bootstrap.js"></script>
+	<!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+	<script src="js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
-<!-- #wrap -->
-<div id="wrap">
-	<!-- #headerwrap -->
-	<div id="headerwrap">
-		<!-- #header -->
-		<div id="header">
-			<h1><a href=""><img src="" alt="온더보드">헤더</a></h1>
-			<h1><a href="/game.html">페이지이동 테스트</a></h1>
-        </div>
-		<!-- /#header -->
-	</div>
-	<!-- /#headerwrap -->
-	
-	<!-- #container -->
-	<div id="container" class="list">
-				
-		<!-- .gameDetail -->
-		<div class="gameDetail">
-			<!-- .gameInfo -->
-			<div class="gameInfo">
-				<h2>보난자<span>Bonanza</span></h2>
-				<div class="btn_edit"><a href="" class="btnRequest">추가기능넣어보자</a></div>
-				<div class="innerbox">
-					<div class="thum"><img src="./image/bonanza1.png"></div>
-					<div class="infoBox">
-						<ul class="info">
-                            <li><em>대상연령</em>만 10세 이상</li>
-                            <li><em>게임인원</em>3명 ~ 5명</li>
-							<li><em>게임시간</em>45분</li>
-							<li><em>게임장르</em>가족 게임</li>
-                            <li><em>게임난이도</em>초급</li>
-						</ul>
-						
+	<!-- #wrap -->
+	<div id="wrap">
+		<!-- #headerwrap -->
+		<div id="headerwrap">
+			<!-- #header -->
+			<div id="header">
+				<h1><a href=""><img src="" alt="온더보드">헤더</a></h1>
+				<h1><a href="/game.html">페이지이동 테스트</a></h1>
+			</div>
+			<!-- /#header -->
+		</div>
+		<!-- /#headerwrap -->
+
+		<!-- #container -->
+		<div id="container" class="list">
+
+			<!-- .gameDetail -->
+			<div class="gameDetail">
+				<!-- .gameInfo -->
+				<div class="gameInfo">
+					<h2>보난자<span>Bonanza</span></h2>
+					<div class="btn_edit"><a href="" class="btnRequest">추가기능넣어보자</a></div>
+					<div class="innerbox">
+						<div class="thum"><img src="./image/bonanza1.png"></div>
+						<div class="infoBox">
+							<ul class="info">
+								<li><em>대상연령</em>만 10세 이상</li>
+								<li><em>게임인원</em>3명 ~ 5명</li>
+								<li><em>게임시간</em>45분</li>
+								<li><em>게임장르</em>가족 게임</li>
+								<li><em>게임난이도</em>초급</li>
+							</ul>
+
+						</div>
 					</div>
 				</div>
-			</div>
-			<!-- /.gameInfo -->
-			<!-- .tabMenu02 -->
-			<div class="tabMenu02" id="gameIntroTab">
-				<ul>
-					<li class="current"><a href="#gameIntroTab">게임소개</a></li>
-					<li><a href="#gameStoreTab">보유매장</a></li>
-					<li><a href="#gameGuideTab">게임가이드</a></li>
-                </ul>
-			</div>
-			<!-- /.tabMenu02 -->
-			<!-- #gameIntro -->
-			<div id="gameIntro">
-				<dl style="border-bottom:0px; text-align:center;">
-                    <div style="text-align: center;" align="center"><br></div><div style="text-align: center;" align="center">
-                    <img src="./image/bonanza-_intro.jpg" title="bonanza_intro.jpg"><br style="clear:both;"><br style="clear:both;">
-                    </div>				
-                </dl>
-				
-			</div>
-			<!-- /#gameIntro -->
-			<!-- .tabMenu02 -->
-			<div class="tabMenu02" id="gameStoreTab">
-				<ul>
-					<li class="current_l"><a href="#gameIntroTab">게임소개</a></li>
-					<li class="current"><a href="#gameStoreTab">보유매장</a></li>
-                    <li class="current_l"><a href="#gameGuideTab">게임가이드</a></li>
-                </ul>
-			</div>
-			<!-- /.tabMenu02 -->
-			<!-- #gameStore -->
-			<div id="gameStore">
-                <h3>보유매장</h3>
-				<!-- .bbsList03 -->
-				<!-- /.bbsList03 -->
-			</div>
-			<!-- /#gameStore -->
-            <!-- .tabMenu02 -->
-            
-			<!-- #gameGuide -->
-			<!-- .tabMenu02 -->
-			<div class="tabMenu02" id="gameStoreTab">
-				<ul>
-					<li class="current_l"><a href="#gameIntroTab">게임소개</a></li>
-					<li class="current_l"><a href="#gameStoreTab">보유매장</a></li>
-                    <li class="current"><a href="#gameGuideTab">게임가이드</a></li>
-                </ul>
-			</div>
-			<div id="gameGuide">
-                <h3>게임가이드</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/sQVG5UWCSLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <!-- /#gameGuide -->
-                        		
-		</div>
-		<!-- /.gameDetail -->
-	</div>
-	<!-- /#container -->
-    <!-- #footerwrap -->
-	<div id="footerwrap">
-		<div id="footer">
-        </div>
-	</div>
-	<!-- /#footerwrap -->
-</div>
-<!-- /#wrap -->
+				<!-- /.gameInfo -->
+				<!-- .tabMenu02 -->
+				<div class="tabMenu02" id="gameIntroTab">
+					<ul>
+						<li class="current"><a href="#gameIntroTab">게임소개</a></li>
+						<li><a href="#gameStoreTab">보유매장</a></li>
+						<li><a href="#gameGuideTab">게임가이드</a></li>
+					</ul>
+				</div>
+				<!-- /.tabMenu02 -->
+				<!-- #gameIntro -->
+				<div id="gameIntro">
+					<dl style="border-bottom:0px; text-align:center;">
+						<div style="text-align: center;" align="center"><br></div>
+						<div style="text-align: center;" align="center">
+							<img src="./image/bonanza-_intro.jpg" title="bonanza_intro.jpg"><br style="clear:both;"><br
+								style="clear:both;">
+						</div>
+					</dl>
 
+				</div>
+				<!-- /#gameIntro -->
+				<!-- .tabMenu02 -->
+				<div class="tabMenu02" id="gameStoreTab">
+					<ul>
+						<li class="current_l"><a href="#gameIntroTab">게임소개</a></li>
+						<li class="current"><a href="#gameStoreTab">보유매장</a></li>
+						<li class="current_l"><a href="#gameGuideTab">게임가이드</a></li>
+					</ul>
+				</div>
+				<!-- /.tabMenu02 -->
+				<!-- #gameStore -->
+				<div id="gameStore">
+					<h3>보유매장</h3>
+					<!-- .bbsList03 -->
+					<!-- /.bbsList03 -->
+				</div>
+				<!-- /#gameStore -->
+				<!-- .tabMenu02 -->
+
+				<!-- #gameGuide -->
+				<!-- .tabMenu02 -->
+				<div class="tabMenu02" id="gameStoreTab">
+					<ul>
+						<li class="current_l"><a href="#gameIntroTab">게임소개</a></li>
+						<li class="current_l"><a href="#gameStoreTab">보유매장</a></li>
+						<li class="current"><a href="#gameGuideTab">게임가이드</a></li>
+					</ul>
+				</div>
+				<div id="gameGuide">
+					<h3>게임가이드</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/sQVG5UWCSLg"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+				<!-- /#gameGuide -->
+
+			</div>
+			<!-- /.gameDetail -->
+		</div>
+		<!-- /#container -->
+		<!-- #footerwrap -->
+		<div id="footerwrap">
+			<div id="footer">
+			</div>
+		</div>
+		<!-- /#footerwrap -->
+	</div>
+	<!-- /#wrap -->
+
+	
 </body>
+
 </html>
