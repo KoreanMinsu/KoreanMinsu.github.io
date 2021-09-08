@@ -13,15 +13,9 @@
 	<!--알고리즘 관련 구글 태그 매니저 활용 방안 생각-->
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script type="text/javascript" src="/boots/assets/js/jquery/jquery-1.12.4.js"></script>
-	<script type="text/javascript" src="./js/bootstrap.js"></script>
-
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="/script/js/jquery.form.min.js"></script>
+	<script src="./js/bootstrap.js" type="text/javascript" ></script>
 	
-	
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
 </head>
 
 <body>
@@ -96,11 +90,36 @@
 				<!-- #gameStore -->
 				<div id="gameStore">
 					<h3>보유매장</h3>
+					<!--.bbsList03-->
+					<ul class="StoreList_Game">
+						<li class="StoreListHead">
+							<div class="list_head">
+								<ul class="list-unstyled">
+									<li>번호</li>
+									<li>매장명</li>
+									<li>위치</li>
+									<li>영업시간</li>
+									<li>전화번호</li>
+									<li>비고</li>
+								</ul>
+							</div>
+						</li>
+						<li class="store01">
+							<div class="list_head">
+								<ul class="list-unstyled">
+									<li>1</li>
+									<li>store</li>
+									<li>location</li>
+									<li>business hour</li>
+									<li>02-000-0000</li>
+									<li><butten class="button" type="button" onclick="location.href='https://www.google.com/'">구글</li>
+								</ul>
+							</div>
+						</li>
+
+
+					</ul>
 					
-					<div style = "text-align: center;" align= "center">
-						<img src="./image/storelist.png">
-					</div>
-					<!-- .bbsList03 -->
 					<!-- /.bbsList03 -->
 				</div>
 				<!-- /#gameStore -->
@@ -108,7 +127,7 @@
 
 				<!-- #gameGuide -->
 				<!-- .tabMenu02 -->
-				<div class="tabMenu02" id="gameStoreTab">
+				<div class="tabMenu02" id="gameGuideTab">
 					<ul class="list-unstyled">
 						<li><a href="#gameIntroTab">게임소개</a></li>
 						<li><a href="#gameStoreTab">보유매장</a></li>
@@ -119,11 +138,11 @@
 				<div id="gameGuide">
 					<h3>게임가이드</h3>
 					<div style="text-align: center;" align="center">
-						<iframe width="780" height="485" src="https://www.youtube.com/embed/sQVG5UWCSLg"
-							title="YouTube video player" frameborder="0"
+						<!--<iframe width="780" height="485" src="https://www.youtube.com/embed/sQVG5UWCSLg"
+							title="YouTube video player"  showinfo="0" 
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen>
-						</iframe>
+							allowfullscreen> 
+						</iframe> -->
 					</div>
 				</div>
 				<!-- /#gameGuide -->

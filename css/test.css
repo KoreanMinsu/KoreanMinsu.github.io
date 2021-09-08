@@ -290,19 +290,6 @@ iframe{z-index:1;}
 .gameList .visual{margin-bottom:150px;}
 .gameList .sortSelect{position:absolute;left:0;top:339px;width:100%;margin-top:0;padding-top:51px; box-sizing:border-box;}
 .sortSelect h3{display:none;}
-.sortSelect>ul:after{content:"";clear:both;}
-.sortSelect>ul>li{float:left;width:20%;position:relative;}
-.sortSelect li dt{padding-left:7.5%;font-size:16px;line-height:48px;cursor:pointer;border:1px solid #d8d8d8;border-left:none;background:url('images/tab_menu_arrow.gif') no-repeat 85% 50%;}
-.sortSelect>ul>li:first-child dt{border-left:1px solid #d8d8d8;}
-.sortSelect li dd{display:none;position:absolute;left:-1px;top:50px;width:100%;background:#f0f0f0;border:1px solid #dadada;border-top:none; z-index:1;}
-.sortSelect>ul>li:first-child dd{left:0;}
-.sortSelect li dd li{padding:0 17px;font-size:16px;line-height:48px;border-top:1px solid #dadada;}
-.sortSelect li dd li:first-child{border-top:none;}
-.sortSelect li dd li input{vertical-align:middle;margin-right:5px;}
-.sortSelect .notice{position:absolute;left:0;top:8px;padding-bottom:7px;z-index:10;}
-.sortSelect .notice span{display:inline-block;padding:0 31px 0 10px;font-size:16px;line-height:37px;color:#fff;border-radius:4px;background:#1db3a8;}
-.sortSelect .notice span img{position:absolute;right:8px;top:7px;cursor:pointer;}
-.sortSelect .notice>img{position:absolute;left:22px;bottom:0;}
 h1.pageTitle{clear:both;padding-top:90px;margin-bottom:-32px;font-size:30px;color:#000;}
 .gameDetail{margin-top:30px;border-top:2px solid #383838;}
 .gameDetail .gameInfo{position:relative;margin-bottom:80px;padding:38px 40px 0;}
@@ -329,11 +316,10 @@ h1.pageTitle{clear:both;padding-top:90px;margin-bottom:-32px;font-size:30px;colo
 .gameDetail #gameIntro dt{font-size:20px;color:#333;}
 .gameDetail #gameIntro dt img{margin-right:10px;vertical-align:middle;}
 .gameDetail #gameIntro dd{margin-top:12px;padding-bottom:22px;font-size:16px;line-height:24px;color:#838383;}
-.gameDetail #gameIntro .box{display:table;width:100%;table-layout:fixed;margin-top:17px;}
-.gameDetail #gameIntro .box dl{display:table-cell;width:50%;padding:0 30px 40px;border-left:1px solid #d9d9d9;}
-.gameDetail #gameIntro .box dl:first-child{border-left:none;}
 .gameDetail #gameStore h3{margin:49px 0 19px;font-size:20px;color:#333;}
 .gameDetail #gameStore h3:first-child{margin-top:29px;}
+.gameDetail #gameStore 
+.gameDetail #gameStore .button{border: none;	color: white; background-color: #d03333;	padding: 15px 32px;	text-align: center;	text-decoration: none;	display: inline-block;	font-size: 16px;	margin: 4px 2px;	cursor: pointer;}
 .gameDetail #gameGuide h3{margin:49px 0 19px;font-size:20px;color:#333;}
 .gameDetail #gameGuide h3:first-child{margin-top:29px;}
 
