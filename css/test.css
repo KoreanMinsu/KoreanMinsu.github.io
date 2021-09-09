@@ -203,10 +203,7 @@ iframe{z-index:1;}
 .bbsView02 .eventView01 li{position:relative;padding-left:109px;font-size:16px;line-height:30px;color:#666;background:url('images/icon_dot03.png') no-repeat 0 12px;}
 .bbsView02 .eventView01 li em{position:absolute;left:19px;top:0;display:inline-block;width:70px;margin-right:20px;color:#333;background:url('images/event_colon.png') no-repeat 100% 9px;}
 .bbsView02 .eventView02 .img img{max-width:100%;}
-/*
-.bbsView02 .eventView02 .btn{width:138px;margin:34px auto 0;text-align:center;}
-.bbsView02 .eventView02 .btn a{display:table-cell;width:138px;height:138px;vertical-align:middle;font-size:24px;line-height:30px;color:#fff;background:#eda635;border-radius:50%;}
-*/
+
 .bbsView02 .eventView02 .btn{display:block; margin:34px auto 0;text-align:center; letter-spacing:-1px;}
 .bbsView02 .eventView02 .btn a{width:200px; margin:0 auto; height:50px;font-size:24px;line-height:50px;color:#fff;background:#1db3a8;border-radius:0%; padding:15px 30px;}
 
@@ -276,13 +273,10 @@ iframe{z-index:1;}
 .gameList .visual{margin-bottom:150px;}
 .gameList .sortSelect{position:absolute;left:0;top:339px;width:100%;margin-top:0;padding-top:51px; box-sizing:border-box;}
 .sortSelect h3{display:none;}
-h1.pageTitle{clear:both;padding-top:90px;margin-bottom:-32px;font-size:30px;color:#000;}
 .gameDetail{margin-top:30px;border-top:2px solid #383838;}
 .gameDetail .gameInfo{position:relative;margin-bottom:80px;padding:38px 40px 0;}
 .gameDetail .gameInfo h2{font-size:30px;color:#333;}
 .gameDetail .gameInfo h2 span{padding-left:10px;font-size:16px;}
-.gameDetail .gameInfo .btn_edit{position:absolute;right:40px;top:40px;}
-.gameDetail .gameInfo .btn_edit a{font-size:14px;line-height:35px;}
 .gameDetail .gameInfo .innerbox{display:table;width:100%;table-layout:fixed;margin-top:23px;}
 .gameDetail .gameInfo .thum{display:table-cell;width:41.25%; vertical-align:top;}
 .gameDetail .gameInfo .thum img{width:100%;}
