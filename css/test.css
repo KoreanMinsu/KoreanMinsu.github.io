@@ -47,7 +47,7 @@ ol,ul,li {
 /* LAYOUT */
 #wrap{position:relative;width:100%;z-index:1;}
 #headerwrap{height:105px;border-bottom:1px solid #d8d8d8;}
-#header{background-color: #000;
+#header{background-color: none;
 	border-bottom: 2px solid #808080;
 	font-family: helvetica, arial, sans-serif;
 	position:absolute;
