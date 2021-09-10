@@ -16,7 +16,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="./js/bootstrap.js" type="text/javascript" ></script>
-	<script src="./js/star-rating.js"></script>
+	<script src="./js/Youtube api.js" type="text/javascript" ></script>
+	
 
 	
 </head>
@@ -77,7 +78,7 @@
 				<!-- /.tabMenu02 -->
 				<!-- #gameIntro -->
 				<div id="gameIntro">
-					<h3>보유매장</h3>
+					<h3>게임소개</h3>
 
 					<dl style="border-bottom:0px; text-align:center;">	
 						<div style="text-align: center;" align="center"><br></div>
@@ -102,9 +103,13 @@
 				<div id="gameStore">
 					<h3>보유매장</h3>
 					<!--.bbsList02-->
-					<div class="bbsList02" id="StoreList_Game">
+					<div class="bbsList02" id="storeList_Game">
 						<div class="innerbox">
 							<table>
+								<tr class="storeList_head">
+									<th class="num"></th>
+
+								</tr>
 
 							</table>
 						</div>
@@ -151,9 +156,9 @@
 				
 				<div id="gameGuide">
 					<h3>게임가이드</h3>
-					<div style="text-align: center;" align="center">
-						<iframe width="780" height="485" </iframe> src="https://www.youtube.com/embed/sQVG5UWCSLg"
-							title="YouTube video player"  showinfo="0" 
+					<div class="tab-content current" style="text-align: center;" align="center">
+						<iframe width="780" height="485" src="https://www.youtube.com/embed/sQVG5UWCSLg"
+							title="YouTube video player"  showinfo="0"  loading="lazy"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 							allowfullscreen> 
 						</iframe>
