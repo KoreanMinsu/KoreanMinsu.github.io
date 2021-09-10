@@ -132,6 +132,7 @@ iframe{z-index:1;}
 .bbsList03 li:hover dd.date{background-image:url('images/bbs_list03_bar.gif')}
 /* 리스트 게임이미지 */
 .bbsList04{overflow:hidden;margin:30px -5px 40px;}
+.bbsList04{list-style: none;}
 
 .bbsList04 li .box{padding:19px 18px 8px;border:1px solid #d8d8d8;box-shadow:2px 2px 2px #f2f2f2;}
 .bbsList04 li .box .thum{text-align:center;}
