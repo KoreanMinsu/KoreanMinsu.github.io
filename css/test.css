@@ -68,16 +68,6 @@ ol,ul,li {
 .tabMenu01 .search{position:absolute;right:0;top:0;}
 .tabMenu01 .search .formText{margin-right:-1px;}
 
-.visual{position:relative;margin-top:10px;padding:49px 65px 43px 49px;border:1px solid #d8d8d8;box-shadow:2px 2px 2px #f2f2f2;}
-.visual h2{font-size:50px;color:#ee204d; font-weight:normal;}
-.visual p{margin-top:13px;font-size:24px;line-height:32px;color:#838383; font-family:notokr-regular;}
-.visual .img{position:absolute;right:65px;bottom:28px;}
-.visual .img img {width:190px;}
-.news_visual, .game_visual, .publishing_visual, .company_visual{height:255px;}
-.news_visual .img{right:41px;bottom:19px;}
-.game_visual .img{right:73px;bottom:20px;}
-.publishing_visual .img{right:73px;bottom:26px;}
-.company_visual .img{right:67px;bottom:39px;}
 
 
 .bbs_sort{position:relative;margin-top:30px;text-align:right;}
