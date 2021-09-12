@@ -23,6 +23,7 @@
       </div>
       <!-- /#headerwrap -->
       <div id="container" class="gameList">
+        <!--#searchForm-->
         <form name="searchForm" id="searchForm" method="POST" action>
 
           <div class="sortSelect">
@@ -90,7 +91,8 @@
             </ul>
           </div>
         </form>
-        
+        <!--/#searchForm-->
+        <!--#gameList-->
          <ul class="bbsList04" id="gameList">
           <li>
             <div class="thum">
@@ -333,7 +335,22 @@
             </div>
           </li>
         </ul>
-        
+        <!--#gameList-->
+        <!--.paging-->
+        <div id="paging">
+          <div class="paging">
+            <a class="paging_first page_img"><img src="" alt=""></a>
+            <a class="paging_prev page_img"><img src="" alt=""></a>
+            <strong>1</strong>
+            <a href="javascript:change_page(&quot;2&quot;);">2</a>
+            <a href="javascript:change_page(&quot;3&quot;);">3</a>
+            <a href="javascript:change_page(&quot;4&quot;);">4</a>
+            <a href="javascript:change_page(&quot;5&quot;);">5</a>
+            <a href="javascript:change_page(&quot;2&quot;);" class="page_next page_img"><img src="/images/common/paging_next.gif" alt=""></a>
+            <a href="javascript:change_page(&quot;6&quot;)" class="page_last page_img"><img src="/images/common/paging_last.gif" alt=""></a>  
+          </div>
+        </div>
+        <!--/.paging-->
       </div>
     </div>
   </body>
