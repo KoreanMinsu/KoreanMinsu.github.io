@@ -70,10 +70,6 @@ ol,ul,li {
 
 
 
-.bbs_sort{position:relative;margin-top:30px;text-align:right;}
-.bbs_sort .sort{position:absolute;left:0;top:0;}
-.bbs_sort .search .formText{margin:0 -1px 0 10px;}
-
 .paging{margin-top:30px;text-align:center;}
 .paging a{display:inline-block;width:40px;height:40px;font-size:19px;line-height:40px;border:1px solid #d8d8d8;border-left:none;vertical-align:middle;}
 .paging a.page_img{margin-left:-1px;border:none;}
@@ -175,7 +171,7 @@ ol,ul,li {
 /* 보드게임 */
 .gameList{position:relative;}
 .gameList .visual{margin-bottom:150px;}
-.gameList .sortSelect{position:absolute;left:0;top:0px;width:100%;margin-top:0;padding-top:10px; box-sizing:border-box; text-align: center;}
+.gameList .sortSelect{left:0;top:0px;width:100%;margin-top:0;padding-top:10px; box-sizing:border-box; text-align: center;}
 .sortSelect h3{display:none;}
 .sortSelect>ul:after{content:"";clear:both;}
 .sortSelect>ul>li{float:left;width:20%;position:relative;}
