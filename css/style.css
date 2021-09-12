@@ -2,6 +2,8 @@
 
 /*폰트설정*/
 /* IE 9 does not support @font-face within @media */
+* {word-break:keep-all;}
+
 @font-face {
     font-family: 'notokr-medium';
     src: url('font/NotoKR-Medium/notokr-medium.eot');
@@ -23,6 +25,20 @@
          url('font/NotoKR-Regular/notokr-regular.svg#notokr-regular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+
+*{box-sizing:border-box;}
+html, body, body div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 body, select, input, textarea, a[href^="tel:"]:link {
@@ -102,7 +118,6 @@ ol,ul,li {
 
 /* 리스트 게임이미지 */
 .bbsList04{overflow:hidden;margin:30px -5px 40px;}
-.bbsList04{list-style: none;}
 
 .bbsList04 li .box{padding:19px 18px 8px;border:1px solid #d8d8d8;box-shadow:2px 2px 2px #f2f2f2;}
 .bbsList04 li .box .thum{text-align:center;}
@@ -170,8 +185,8 @@ ol,ul,li {
 
 /* 보드게임 */
 .gameList{position:relative;}
-.gameList .visual{margin-bottom:150px;}
 .gameList .sortSelect{left:0;top:0px;width:100%;margin-top:0;padding-top:10px; box-sizing:border-box; text-align: center;}
+.gameList .listType{position:absolute;right:15px;top:101px;}
 .sortSelect h3{display:none;}
 .sortSelect>ul:after{content:"";clear:both;}
 .sortSelect>ul>li{float:left;width:20%;position:relative;}
@@ -248,3 +263,26 @@ ol,ul,li {
   .linkStore, .linkStore:before {
 	transition: all 0.2s ease;
   }
+
+  @media (max-width:1240px){
+	#headerwrap{padding:0 20px;}
+	#container{padding:0 20px;}
+	#mainContent{padding:0 20px;}
+	#footer{padding:0 20px 0 83px;}
+	#footer h1 {left:20px;}
+	.gameList .sortSelect{left:20px;padding-right:20px; box-sizing:border-box;}
+	.gameList .sortSelect ul{margin-right:20px;}
+	}
+	
+	@media (max-width:1150px){
+	.bbsList04>li{width:25%;}
+	}
+	
+	@media (max-width:1100px){
+	.tabMenu02 li{width:14%;}
+	}
+	
+	@media (max-width:768px){
+		.youtubeWrap {position: relative;width: 100%;padding-bottom: 56.25%;}
+		iframe {position: absolute;width: 100%;height: 100%;left:0;top:0;}
+	}
