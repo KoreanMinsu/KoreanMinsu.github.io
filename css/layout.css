@@ -24,6 +24,7 @@ body{font-size:12px;}
 
 
 #container{min-width:320px;margin:0;padding:0 10px;}
+
 .tabMenu01{margin:0 -10px;padding:10px;border:2px solid #ddd;border-width:2px 0;}
 .tabMenu01 dl{position:relative;}
 .tabMenu01 dt{display:block;position:relative;padding:13px 15px 12px;font-size:16px;color:#383838;letter-spacing:-0.05px;cursor:pointer;border:2px solid #dcdcdc;background:#fff;}
@@ -92,15 +93,12 @@ body{font-size:12px;}
 .gameDetail .gameInfo .infoBox .info li, .gameDetail02 .gameInfo .infoBox .info li{padding-left:110px;font-size:13px;line-height:30px;height:auto;min-height:30px;background-position:0 8px;}
 .gameDetail .gameInfo .infoBox .info li em{width:96px;}
 .gameDetail .gameInfo .infoBox ul.info:first-child{margin-bottom:10px;padding:12px 15px 11px;border:none;background:#f8f8f8;}
-.gameDetail .gameInfo .infoBox p.order{margin-top:15px;padding:0 15px;}
-.gameDetail .gameInfo .infoBox p.order em{padding-right:0;font-size:16px;}
-.gameDetail .gameInfo .infoBox p.order span{display:block;margin-top:15px;}
-.gameDetail .gameInfo .infoBox p.order a{width:144px;padding:0 15px;line-height:28px;font-size:13px;}
-.gameDetail .gameInfo .bbssvc{position:relative;margin-top:10px;padding:0 15px;text-align:right;}
-.gameDetail .gameInfo .bbssvc li{display:inline;margin-left:3px;}
-.gameDetail .gameInfo .bbssvc li {height:30px;vertical-align:middle;}
-.gameDetail .gameInfo .bbssvc li:first-child{position:absolute;left:15px;top:1px;padding-right:0;}
-.gameDetail .gameInfo .bbssvc li:first-child img{height:27px;}
+.gameDetail .gameInfo .infoBox .bbssvc{position:relative;margin-top:10px;padding:0 15px;text-align:right;}
+
+.gameDetail .gameInfo .infoBox .bbssvc li {height:30px;vertical-align:middle; float: left;}
+.gameDetail .gameInfo .infoBox .bbssvc li:first-child{float:left;}
+.gameDetail .gameInfo .infoBox .bbssvc li:first-child img{height:27px;}
+.gameDetail .gameInfo .infoBox .bbssvc li:last-child{float: right;}
 .gameDetail .tabMenu02{margin-top:25px;}
 .gameDetail #gameIntro{margin-top:20px;border:none;}
 .gameDetail #gameIntro>dl:first-child{margin:15px 0;border:none;}

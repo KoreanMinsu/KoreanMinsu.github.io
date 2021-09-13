@@ -49,6 +49,8 @@ body, select, input, textarea{
 	letter-spacing:-0.5px;
 }
 
+a{color:#383838;text-decoration:none;}
+a:hover{text-decoration:none;}
 iframe{z-index:1;}
 ol,ul,li {
 	list-style:none;
