@@ -1,10 +1,6 @@
 @charset "utf-8";
 *{-webkit-margin-start:0; -webkit-text-size-adjust:none;}
-body, select, input, textarea, a[href^="tel:"]:link{font-size:12px;}
-
-select{width:210px;height:30px;padding-left:10px;font-size:12px;}
-input[type="text"], input[type="password"], input[type="number"]{width:270px;height:35px;padding:0 10px;font-size:12px;}
-textarea{height:100px;font-size:12px;}
+body{font-size:12px;}
 
 #wrap{min-width:320px;padding-top:54px;overflow:hidden;}
 #headerwrap{display:none;}
@@ -19,7 +15,7 @@ textarea{height:100px;font-size:12px;}
 
 
 #container{min-width:320px;margin:0;padding:0 10px;}
-.tabMenu01{margin:0 -10px;padding:10px;border:2px solid #ddd;border-width:2px 0;background:#f2f2f2;}
+.tabMenu01{margin:0 -10px;padding:10px;border:2px solid #ddd;border-width:2px 0;}
 .tabMenu01 dl{position:relative;}
 .tabMenu01 dt{display:block;position:relative;padding:13px 15px 12px;font-size:16px;color:#383838;letter-spacing:-0.05px;cursor:pointer;border:2px solid #dcdcdc;background:#fff;}
 .tabMenu01 dt img{position:absolute;right:15px;top:16px;height:10px;}
@@ -91,11 +87,11 @@ textarea{height:100px;font-size:12px;}
 .gameDetail .gameInfo .infoBox p.order em{padding-right:0;font-size:16px;}
 .gameDetail .gameInfo .infoBox p.order span{display:block;margin-top:15px;}
 .gameDetail .gameInfo .infoBox p.order a{width:144px;padding:0 15px;line-height:28px;font-size:13px;}
-.gameDetail .gameInfo .bbsSns{position:relative;margin-top:10px;padding:0 15px;text-align:right;}
-.gameDetail .gameInfo .bbsSns li{display:inline;margin-left:3px;}
-.gameDetail .gameInfo .bbsSns li img{height:30px;vertical-align:middle;}
-.gameDetail .gameInfo .bbsSns li:first-child{position:absolute;left:15px;top:1px;padding-right:0;}
-.gameDetail .gameInfo .bbsSns li:first-child img{height:27px;}
+.gameDetail .gameInfo .bbssvc{position:relative;margin-top:10px;padding:0 15px;text-align:right;}
+.gameDetail .gameInfo .bbssvc li{display:inline;margin-left:3px;}
+.gameDetail .gameInfo .bbssvc li img{height:30px;vertical-align:middle;}
+.gameDetail .gameInfo .bbssvc li:first-child{position:absolute;left:15px;top:1px;padding-right:0;}
+.gameDetail .gameInfo .bbssvc li:first-child img{height:27px;}
 .gameDetail .tabMenu02{margin-top:25px;}
 .gameDetail #gameIntro{margin-top:20px;border:none;}
 .gameDetail #gameIntro>dl:first-child{margin:15px 0;border:none;}
@@ -129,6 +125,21 @@ textarea{height:100px;font-size:12px;}
 .bbsList04 li td{font-size:12px;line-height:20px;text-align:right;}
 }
 
+@media (max-width:1240px){
+    #headerwrap{padding:0 20px;}
+    #container{padding:0 20px;}
+    .gameList .sortSelect{left:20px;padding-right:20px; box-sizing:border-box;}
+    .gameList .sortSelect ul{margin-right:20px;}
+}
+  
+@media (max-width:1150px){
+    .bbsList04>li{width:25%;}
+}
+
+@media (max-width:1100px){
+    .tabMenu02 li{width:14%;}
+}
+
 @media (max-width:480px){
 .bbsList02>li .thum{width:125px;}
 }
@@ -151,3 +162,4 @@ textarea{height:100px;font-size:12px;}
 @media (max-width:370px){
 .bbsList04>li{width:100%;}
 }
+

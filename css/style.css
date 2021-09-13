@@ -62,28 +62,22 @@ ol,ul,li {
 
 /* LAYOUT */
 #wrap{position:relative;width:100%;z-index:1;}
+#mHeader{display:none;}
 #headerwrap{height:105px;border-bottom:1px solid #d8d8d8;}
-#header{background-color: none;
-	border-bottom: 2px solid #808080;
-	font-family: helvetica, arial, sans-serif;
-	position:absolute;
-	top: 0;
-	width: 100%;
-	z-index: 110;
-	
-	transition: top 0.5s ease;}
+#header{position:relative;width:100%;max-width:1200px;margin:0 auto;height:105px;z-index:1000;}
+#header .gnb{position:absolute;right:0;top:40px;width:79.58%;}
+#header .gnb li{float:right;width:12%;font-size:17px;line-height:24px;text-align:center;}
+#header .gnb li a{color:#4c565c;}
+
 
 #container{width:100%;max-width:1200px;margin:40px auto 0;}
 
-.tabMenu01{position:relative;margin-top:30px;background:url('images/tabMenu01_bg.gif') repeat-x 0 100%;}
+.tabMenu01{position:relative;margin-top:30px;}
 .tabMenu01 ul{overflow:hidden;}
 .tabMenu01 li{float:left;width:15.17%;text-align:center;}
 .tabMenu01 li a{display:block;font-size:16px;line-height:55px;color:#838383;border:1px solid #d8d8d8;border-bottom:1px solid #ee204d;}
 .tabMenu01 li:first-child a{border-left:1px solid #d8d8d8;}
 .tabMenu01 li.current a{color:#ee204d;text-decoration:underline;border-color:#ee204d;border-bottom:1px solid #fff;}
-.tabMenu01 .search{position:absolute;right:0;top:0;}
-.tabMenu01 .search .formText{margin-right:-1px;}
-
 
 
 .paging{margin-top:30px;text-align:center;}
@@ -95,7 +89,7 @@ ol,ul,li {
 
 
 /* 리스트_매장 */
-.bbsList02{margin-top:10px;border-top:2px solid #383838;}
+.bbsList02{margin-top:30px;border-top:2px solid #383838;}
 .bbsList02 .innerbox{border:1px solid #d8d8d8;border-top:none;}
 .bbsList02 table{width:100%; border-collapse:collapse;}
 .bbsList02 thead{border-bottom:2px solid #000;}
@@ -193,50 +187,17 @@ ol,ul,li {
 .gameDetail #gameIntro dt{font-size:20px;color:#333;}
 .gameDetail #gameIntro dt img{margin-right:10px;vertical-align:middle;}
 .gameDetail #gameIntro dd{margin-top:12px;padding-bottom:22px;font-size:16px;line-height:24px;color:#838383;}
-.gameDetail #gameStore h3{margin:49px 0 19px;font-size:20px;color:#333;}
-.gameDetail #gameStore h3:first-child{margin-top:29px;}
+.gameDetail #gameStore{margin-top:30px;border:1px solid #d9d9d9;}
 .gameDetail #gameStore li b{margin: 5 5 5 5; padding: 0 0 0 0; border : 0; float: left;}
 .gameDetail #gameStore 
-.gameDetail #gameGuide h3{margin:49px 0 19px;font-size:20px;color:#333;}
-.gameDetail #gameGuide h3:first-child{margin-top:29px;}
+.gameDetail #gameGuide{margin-top:30px;border:1px solid #d9d9d9;}
 .gameDetail #gameGuide .video-wrap {position:relative; padding-bottom:56.25%; padding-top:30px; height:0; overflow:hidden;}
 .gameDetail #gameGuide .video-wrap iframe, .video-wrap object, .video-wrap embed {position:absolute; top:0; left:0; width:100%; height:100%;}
 
 /*Youtube load speed for Explorer*/
 
 /*매장상세보기*/
-.linkStore:hover {
-	color: #5CAAEF;
-	transform: scale(1.1);
-  }
-  
-  .bbsList02 .linkStore:before {
-	content: '';
-	border-bottom: solid 1px #5CAAEF;
-	position: absolute;
-	bottom: 0; left: 0;
-	width: 100%;
-	opacity: 0;
-  }
 
-  .bbsList02 .linkStore:hover:before {
-	  opacity: 1.0;
-  }
-
-
-  .linkStore:before {
-	content: '';
-	border-bottom: solid 1px #5CAAEF;
-	position: absolute;
-	bottom: 0; left: 0;
-	width: 100%;
-	
-	opacity: 0;
-  }
-  
-  .linkStore, .linkStore:before {
-	transition: all 0.2s ease;
-  }
 
   @media (max-width:1240px){
 	#headerwrap{padding:0 20px;}
@@ -257,6 +218,6 @@ ol,ul,li {
 	}
 	
 	@media (max-width:768px){
-		.youtubeWrap {position: relative;width: 100%;padding-bottom: 56.25%;}
+		.videoeWrap {position: relative;width: 100%;padding-bottom: 56.25%;padding-top: 20px;}
 		iframe {position: absolute;width: 100%;height: 100%;left:0;top:0;}
 	}
