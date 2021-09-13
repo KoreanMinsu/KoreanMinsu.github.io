@@ -6,23 +6,23 @@
 
 @font-face {
     font-family: 'notokr-medium';
-    src: url('font/NotoKR-Medium/notokr-medium.eot');
-    src: url('font/NotoKR-Medium/notokr-medium.eot?#iefix') format('embedded-opentype'),
-         url('font/NotoKR-Medium/notokr-medium.woff2') format('woff2'),
-         url('font/NotoKR-Medium/notokr-medium.woff') format('woff'),
-         url('font/NotoKR-Medium/notokr-medium.ttf') format('truetype'),
-         url('font/NotoKR-Medium/notokr-medium.svg#notokr-medium') format('svg');
+    src: url('../webapp/font/NotoKR-Medium/notokr-medium.eot');
+    src: url('../webapp/font/NotoKR-Medium/notokr-medium.eot?#iefix') format('embedded-opentype'),
+         url('../webapp/font/NotoKR-Medium/notokr-medium.woff2') format('woff2'),
+         url('../webapp/font/NotoKR-Medium/notokr-medium.woff') format('woff'),
+         url('../webapp/font/NotoKR-Medium/notokr-medium.ttf') format('truetype'),
+         url('../webapp/font/NotoKR-Medium/notokr-medium.svg#notokr-medium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'notokr-regular';
-    src: url('font/NotoKR-Regular/notokr-regular.eot');
-    src: url('font/NotoKR-Regular/notokr-regular.eot?#iefix') format('embedded-opentype'),
-         url('font/NotoKR-Regular/notokr-regular.woff2') format('woff2'),
-         url('font/NotoKR-Regular/notokr-regular.woff') format('woff'),
-         url('font/NotoKR-Regular/notokr-regular.ttf') format('truetype'),
-         url('font/NotoKR-Regular/notokr-regular.svg#notokr-regular') format('svg');
+    src: url('../webapp/font/NotoKR-Regular/notokr-regular.eot');
+    src: url('../webapp/font/NotoKR-Regular/notokr-regular.eot?#iefix') format('embedded-opentype'),
+         url('../webapp/font/NotoKR-Regular/notokr-regular.woff2') format('woff2'),
+         url('../webapp/font/NotoKR-Regular/notokr-regular.woff') format('woff'),
+         url('../webapp/font/NotoKR-Regular/notokr-regular.ttf') format('truetype'),
+         url('../webapp/font/NotoKR-Regular/notokr-regular.svg#notokr-regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -41,7 +41,7 @@ time, mark, audio, video {
     border: 0;
 }
 
-body, select, input, textarea, a[href^="tel:"]:link {
+body, select, input, textarea{
     color: #383838;
     font-weight: normal;
 	font-size:12px;
@@ -97,20 +97,16 @@ ol,ul,li {
 /* 리스트_매장 */
 .bbsList02{margin-top:10px;border-top:2px solid #383838;}
 .bbsList02 .innerbox{border:1px solid #d8d8d8;border-top:none;}
-.bbsList02 table{width:100%;}
-.bbsList02 thead{border-bottom:2px solid #000; background-color: #00b4aa; }
+.bbsList02 table{width:100%; border-collapse:collapse;}
+.bbsList02 thead{border-bottom:2px solid #000;}
+.bbsList02 thead tr th{font-size: 16px;border-bottom:2px solid #000;}
 .bbsList02 td{padding:16px 0 14px;font-size:16px;line-height:22px;min-height:51px;border-top:1px solid #d8d8d8;}
 .bbsList02 td.num{width:100px;text-align:center;}
 .bbsList02 td.title{padding-right:10.66%;background:url('') no-repeat 93.89% 50%;}
 
 .bbsList02 tr.current td.title{background-image:url('');}
-.bbsList02 td em{color:#1db3a8;padding-right:4px;}
 .bbsList02 tr:first-child td{border-top:none;}
 .bbsList02 tr td{cursor:pointer;}
-.bbsList02 tr.faq_a{display:none;}
-.bbsList02 tr.faq_a td{padding-top:2px;border-top:none;background:#f7f7f7 url('images/bg_dotted_line.gif') repeat-x 0 0;}
-.bbsList02 tr.faq_a td .faq_a_box{position:relative;padding:12px 100px 18px 115px;}
-.bbsList02 tr.faq_a td .faq_a_box em{position:absolute;left:100px;top:12px;}
 
 
 
@@ -148,39 +144,15 @@ ol,ul,li {
 .bbsList04 li dd th img{margin-right:8px;line-height:0;vertical-align:middle;}
 .bbsList04 li dd td{font-size:14px;line-height:26px;text-align:right;}
 
+.listType{overflow:hidden;margin:50px 0 -20px;}
+.listType li{float:right;padding-left:7px;}
+.listType li.sortB select{width:130px;height:32px;font-size:14px;margin-left:3px;}
 
 /* 버튼 */
-.btnMatching{display:inline-block; font-size:16px;line-height:48px;text-align:center;color:white;border:1px solid #ee204d;background:#ee204d; padding:0 20px;}
 .btnWhite02{display:inline-block;width:220px;font-size:16px;line-height:48px;text-align:center;color:#838383;border:1px solid #838383;background:#fff;}
 .btnRed01{border:none;color: white;background-color: #d03333;	padding: 15px 32px;	text-align: center;	text-decoration: none;	display: inline-block;	font-size: 16px;	margin: 4px 2px;cursor:pointer;}
 
-/*별점 평점*/
-.star-ratings {
-	color: #aaa9a9; 
-	position: relative;
-	unicode-bidi: bidi-override;
-	width: max-content;
-	-webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-	-webkit-text-stroke-width: 1.3px;
-	-webkit-text-stroke-color: #2b2a29;
-  }
-   
-  .star-ratings-fill {
-	color: #fff58c;
-	padding: 0;
-	position: absolute;
-	z-index: 1;
-	display: flex;
-	top: 0;
-	left: 0;
-	overflow: hidden;
-	
-  }
-   
-  .star-ratings-base {
-	z-index: 0;
-	padding: 0;
-  }
+
 
 
 /* 보드게임 */
@@ -190,7 +162,7 @@ ol,ul,li {
 .sortSelect h3{display:none;}
 .sortSelect>ul:after{content:"";clear:both;}
 .sortSelect>ul>li{float:left;width:20%;position:relative;}
-.sortSelect li dt{padding-left:7.5%;font-size:16px;line-height:48px;cursor:pointer;border:1px solid #d8d8d8;border-left:none;background:url('images/tab_menu_arrow.gif') no-repeat 85% 50%;}
+.sortSelect li dt{padding-left:7.5%;font-size:16px;line-height:48px;cursor:pointer;border:1px solid #d8d8d8;border-left:none;background:url('./image/tab_menu_arrow.gif') no-repeat 85% 50%;}
 .sortSelect>ul>li:first-child dt{border-left:1px solid #d8d8d8;}
 .sortSelect li dd{display:none;position:absolute;left:-1px;top:50px;width:100%;background:#f0f0f0;border:1px solid #dadada;border-top:none; z-index:1;}
 .sortSelect>ul>li:first-child dd{left:0;}
@@ -227,6 +199,8 @@ ol,ul,li {
 .gameDetail #gameStore 
 .gameDetail #gameGuide h3{margin:49px 0 19px;font-size:20px;color:#333;}
 .gameDetail #gameGuide h3:first-child{margin-top:29px;}
+.gameDetail #gameGuide .video-wrap {position:relative; padding-bottom:56.25%; padding-top:30px; height:0; overflow:hidden;}
+.gameDetail #gameGuide .video-wrap iframe, .video-wrap object, .video-wrap embed {position:absolute; top:0; left:0; width:100%; height:100%;}
 
 /*Youtube load speed for Explorer*/
 

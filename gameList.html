@@ -35,6 +35,7 @@
         <form name="searchForm" id="searchForm" method="POST" action>
           <input type="hidden" name="pagenum" id="pagenum" value="1">
           <input type="hidden" name="view_type" id="view_type" value="bg">
+          <!--.sortSelect-->
           <div class="sortSelect">
             <h3 onclick="$(this).next('ul').toggle();">검색조건을 선택하세요</h3>
             <ul id="searchTab">
@@ -199,7 +200,29 @@
                 </dl>
               </li>
             </ul>
+            <div class="notice">
+              <!-- .listType -->
+              <ul class="listType">
+                <li class="search">
+                  <form name="search_form" method="post" action="" onsubmit="return search_chk(this);">
+                    <fieldset>
+                      <input type="text" name="search_text" class="formSearch"/>
+                    </fieldset>
+                  </form>
+                </li>
+                <li class="sortB">
+                  <select title="정렬기준" name="search_sort" class="formSelect">
+                    <option value="" selected="selected">정렬기준</option>
+                    <option value="name_asc">오름차순</option>
+                    <option value="name_desc">내림차순</option>
+                  </select>
+                </li>
+              </ul>
+              <!-- /.listType -->
+            </div>
           </div>
+          <!--/.sortSelect-->
+          
         </form>
         <!--/#searchForm-->
         <!--#gameList-->
@@ -509,15 +532,15 @@
         <!--.paging-->
         <div id="paging">
           <div class="paging">
-            <a class="paging_first page_img"><img src="" alt=""></a>
-            <a class="paging_prev page_img"><img src="" alt=""></a>
+            <a class="paging_first page_img"><img src="./webapp/image/paging_first.gif" alt=""></a>
+            <a class="paging_prev page_img"><img src="./webapp/image/paging_prev.gif" alt=""></a>
             <strong>1</strong>
             <a href="javascript:change_page(&quot;2&quot;);">2</a>
             <a href="javascript:change_page(&quot;3&quot;);">3</a>
             <a href="javascript:change_page(&quot;4&quot;);">4</a>
             <a href="javascript:change_page(&quot;5&quot;);">5</a>
-            <a href="javascript:change_page(&quot;2&quot;);" class="page_next page_img"><img src="" alt=""></a>
-            <a href="javascript:change_page(&quot;6&quot;)" class="page_last page_img"><img src="" alt=""></a>  
+            <a href="javascript:change_page(&quot;2&quot;);" class="page_next page_img"><img src="./webapp/image/paging_next.gif" alt=""></a>
+            <a href="javascript:change_page(&quot;6&quot;)" class="page_last page_img"><img src="./webapp/image/paging_last.gif" alt=""></a>  
           </div>
         </div>
         <!--/.paging-->

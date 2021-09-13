@@ -74,8 +74,7 @@ textarea{height:100px;font-size:12px;}
 .sortSelect li dt.on{background-image:url('images/tab_menu_arrow_m02.gif');}
 .sortSelect li dd{position:static;border-width:2px;}
 .sortSelect li dd li{padding:13px 15px 12px;font-size:13px;line-height:100%;border-width:2px;}
-.sortSelect .notice{display:none;}
-h1.pageTitle{display:none;}
+
 .gameDetail{margin-top:10px;}
 .gameDetail .gameInfo{margin-bottom:30px;padding:15px 0 15px;border:1px solid #d9d9d9;border-top:none;}
 .gameDetail .gameInfo h2{font-size:20px;padding:0 15px;}
