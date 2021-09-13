@@ -65,6 +65,7 @@ ol,ul,li {
 #mHeader{display:none;}
 #headerwrap{height:105px;border-bottom:1px solid #d8d8d8;}
 #header{position:relative;width:100%;max-width:1200px;margin:0 auto;height:105px;z-index:1000;}
+#header h1{height: 100%;}
 #header .gnb{position:absolute;right:0;top:40px;width:79.58%;}
 #header .gnb li{float:right;width:12%;font-size:17px;line-height:24px;text-align:center;}
 #header .gnb li a{color:#4c565c;}
@@ -91,6 +92,7 @@ ol,ul,li {
 .tabMenu01 li a{display:block;font-size:16px;line-height:55px;color:#838383;border:1px solid #d8d8d8;border-bottom:1px solid #ee204d;}
 .tabMenu01 li:first-child a{border-left:1px solid #d8d8d8;}
 .tabMenu01 li.current a{color:#ee204d;text-decoration:underline;border-color:#ee204d;border-bottom:1px solid #fff;}
+.tabMenu01 #gameGuide{margin-bottom: 30px;}
 
 
 .paging{margin-top:30px;text-align:center;}
@@ -205,9 +207,9 @@ ol,ul,li {
 .gameDetail #gameStore 
 .gameDetail #gameGuide{margin-top:30px;border:1px solid #d9d9d9;}
 .gameDetail #gameGuide dl{border-bottom: 0px; text-align: center;}
-.gameDetail #gameGuide>dl:first-child {margin: 30px;border-bottom: 1px solid #d9d9d9;
-}
-.gameDetail #gameGuide>dl div {text-align: center; max-width: 780px;margin: 0 auto;}
+.gameDetail #gameGuide>dl:first-child {margin: 30px;border-bottom: 1px solid #d9d9d9;}
+.gameDetail #gameGuide .videoeWrap{padding-top: 30px;}
+.gameDetail #gameGuide div {text-align: center; max-width: 780px;margin: 0 auto;}
 .gameDetail #gameGuide>div .embed-container {position:relative; padding-bottom:56.25%; padding-top:30px; margin-top: 30px; overflow:hidden;}
 .gameDetail #gameGuide>div .embed-container iframe, .embed-container object, .embed-container embed {position:absolute; top:0; left:0; width:100%; height:100%;}
 

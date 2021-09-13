@@ -98,7 +98,7 @@ body{font-size:12px;}
 .gameDetail .gameInfo .infoBox p.order a{width:144px;padding:0 15px;line-height:28px;font-size:13px;}
 .gameDetail .gameInfo .bbssvc{position:relative;margin-top:10px;padding:0 15px;text-align:right;}
 .gameDetail .gameInfo .bbssvc li{display:inline;margin-left:3px;}
-.gameDetail .gameInfo .bbssvc li img{height:30px;vertical-align:middle;}
+.gameDetail .gameInfo .bbssvc li {height:30px;vertical-align:middle;}
 .gameDetail .gameInfo .bbssvc li:first-child{position:absolute;left:15px;top:1px;padding-right:0;}
 .gameDetail .gameInfo .bbssvc li:first-child img{height:27px;}
 .gameDetail .tabMenu02{margin-top:25px;}
