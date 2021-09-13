@@ -72,6 +72,19 @@ ol,ul,li {
 
 #container{width:100%;max-width:1200px;margin:40px auto 0;}
 
+#footerwrap{height:155px;margin-top:80px;background:#969696;}
+#footer{position:relative;width:100%;max-width:1200px;margin:0 auto;padding-left:63px;}
+#footer h1{position:absolute;left:0;top:52px;}
+#footer .menu{overflow:hidden;padding-top:33px;}
+#footer .menu li{float:left;margin-right:20px;}
+#footer .menu li a{font-size:14px;line-height:20px;color:#fff;}
+#footer .addr{margin-top:10px;overflow:hidden;font-family:'notokr-regular';font-size:14px;line-height:20px;color:#fff;}
+#footer .addr.eng {padding-top:50px;}
+#footer .addr li{float:left;padding-left:13px;margin-right:10px;background:url('images/foot_section.gif') no-repeat 0 3px;}
+#footer .addr li:first-child, #footer .addr li.phone{clear:both;padding-left:0;background:none;}
+#footer .copy{font-family: 'notokr-regular';font-size:14px;line-height:20px;color:#fff;}
+
+
 .tabMenu01{position:relative;margin-top:30px;}
 .tabMenu01 ul{overflow:hidden;}
 .tabMenu01 li{float:left;width:15.17%;text-align:center;}
@@ -93,7 +106,7 @@ ol,ul,li {
 .bbsList02 .innerbox{border:1px solid #d8d8d8;border-top:none;}
 .bbsList02 table{width:100%; border-collapse:collapse;}
 .bbsList02 thead{border-bottom:2px solid #000;}
-.bbsList02 thead tr th{font-size: 16px;border-bottom:2px solid #000;}
+.bbsList02 thead tr th{height: 35px; font-size: 16px;border-bottom:2px solid #000;}
 .bbsList02 td{padding:16px 0 14px;font-size:16px;line-height:22px;min-height:51px;border-top:1px solid #d8d8d8;}
 .bbsList02 td.num{width:100px;text-align:center;}
 .bbsList02 td.title{padding-right:10.66%;background:url('') no-repeat 93.89% 50%;}
@@ -191,33 +204,32 @@ ol,ul,li {
 .gameDetail #gameStore li b{margin: 5 5 5 5; padding: 0 0 0 0; border : 0; float: left;}
 .gameDetail #gameStore 
 .gameDetail #gameGuide{margin-top:30px;border:1px solid #d9d9d9;}
-.gameDetail #gameGuide .video-wrap {position:relative; padding-bottom:56.25%; padding-top:30px; height:0; overflow:hidden;}
-.gameDetail #gameGuide .video-wrap iframe, .video-wrap object, .video-wrap embed {position:absolute; top:0; left:0; width:100%; height:100%;}
+.gameDetail #gameGuide dl{border-bottom: 0px; text-align: center;}
+.gameDetail #gameGuide>dl:first-child {margin: 30px;border-bottom: 1px solid #d9d9d9;
+}
+.gameDetail #gameGuide>dl div {text-align: center; max-width: 780px;margin: 0 auto;}
+.gameDetail #gameGuide>div .embed-container {position:relative; padding-bottom:56.25%; padding-top:30px; margin-top: 30px; overflow:hidden;}
+.gameDetail #gameGuide>div .embed-container iframe, .embed-container object, .embed-container embed {position:absolute; top:0; left:0; width:100%; height:100%;}
 
-/*Youtube load speed for Explorer*/
+@media (max-width:1240px){
+#headerwrap{padding:0 20px;}
+#container{padding:0 20px;}
+#mainContent{padding:0 20px;}
+#footer{padding:0 20px 0 83px;}
+#footer h1 {left:20px;}
+.gameList .sortSelect{left:20px;padding-right:20px; box-sizing:border-box;}
+.gameList .sortSelect ul{margin-right:20px;}
+}
 
-/*매장상세보기*/
+@media (max-width:1150px){
+.bbsList04>li{width:25%;}
+}
 
+@media (max-width:1100px){
+.tabMenu02 li{width:14%;}
+}
 
-  @media (max-width:1240px){
-	#headerwrap{padding:0 20px;}
-	#container{padding:0 20px;}
-	#mainContent{padding:0 20px;}
-	#footer{padding:0 20px 0 83px;}
-	#footer h1 {left:20px;}
-	.gameList .sortSelect{left:20px;padding-right:20px; box-sizing:border-box;}
-	.gameList .sortSelect ul{margin-right:20px;}
-	}
-	
-	@media (max-width:1150px){
-	.bbsList04>li{width:25%;}
-	}
-	
-	@media (max-width:1100px){
-	.tabMenu02 li{width:14%;}
-	}
-	
-	@media (max-width:768px){
-		.videoeWrap {position: relative;width: 100%;padding-bottom: 56.25%;padding-top: 20px;}
-		iframe {position: absolute;width: 100%;height: 100%;left:0;top:0;}
-	}
+@media (max-width:768px){
+	.videoeWrap {position: relative;width: 100%;padding-bottom: 56.25%;padding-top: 20px;}
+	iframe {position: absolute;width: 100%;height: 100%;left:0;top:0;}
+}

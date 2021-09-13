@@ -12,6 +12,15 @@ body{font-size:12px;}
 #footerwrap{height:auto;margin-top:45px;padding-bottom:22px;}
 #footer{min-width:320px;padding-left:0;}
 #footer h1{display:none;}
+#footer .menu{overflow:hidden;padding-top:23px;text-align:center;}
+#footer .menu li{float:none;display:inline-block;margin-right:15px;}
+#footer .menu li a{font-size:11px;line-height:15px;color:#fff;}
+#footer .menu li:nth-child(4){margin-right:0;}
+#footer .addr{margin-top:21px;font-size:12px;line-height:15px;text-align:center;}
+#footer .addr li{float:none;display:inline-block;background-position:0 1px;}
+#footer .addr li:first-child, #footer .addr li.addr01, #footer .addr li.phone{clear:both;padding-left:0;background:none;}
+#footer .copy{font-size:12px;line-height:15px;text-align:center;}
+
 
 
 #container{min-width:320px;margin:0;padding:0 10px;}
@@ -111,19 +120,7 @@ body{font-size:12px;}
 .searchResult .line{height:1px;margin:35px 0 34px;}
 .searchResult .bbsList04{margin:12px 0 -10px;}
 
-@media (max-width:860px){
-.bbsList04>li, .brandList01 li{width:33.33%;}
-}
 
-@media (max-width:640px){
-.bbsList04>li{width:50%;}
-.bbsList04 li .desc {border:1px solid #d8d8d8; padding:10px 15px; border-top:0px;}
-.bbsList04 li .title{margin:5px 0 8px;font-size:16px;line-height:22px;height:48px;overflow:hidden;}
-.bbsList04 li table{width:100%;}
-.bbsList04 li th{font-size:12px;line-height:20px;color:#9d9d9d;text-align:left;}
-.bbsList04 li th img{margin-right:8px;line-height:0;vertical-align:middle; width:18px;}
-.bbsList04 li td{font-size:12px;line-height:20px;text-align:right;}
-}
 
 @media (max-width:1240px){
     #headerwrap{padding:0 20px;}
@@ -139,6 +136,20 @@ body{font-size:12px;}
 @media (max-width:1100px){
     .tabMenu02 li{width:14%;}
 }
+
+@media (max-width:860px){
+    .bbsList04>li, .brandList01 li{width:33.33%;}
+    }
+    
+    @media (max-width:640px){
+    .bbsList04>li{width:50%;}
+    .bbsList04 li .desc {border:1px solid #d8d8d8; padding:10px 15px; border-top:0px;}
+    .bbsList04 li .title{margin:5px 0 8px;font-size:16px;line-height:22px;height:48px;overflow:hidden;}
+    .bbsList04 li table{width:100%;}
+    .bbsList04 li th{font-size:12px;line-height:20px;color:#9d9d9d;text-align:left;}
+    .bbsList04 li th img{margin-right:8px;line-height:0;vertical-align:middle; width:18px;}
+    .bbsList04 li td{font-size:12px;line-height:20px;text-align:right;}
+    }
 
 @media (max-width:480px){
 .bbsList02>li .thum{width:125px;}
