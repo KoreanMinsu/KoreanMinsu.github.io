@@ -81,11 +81,11 @@ ol,ul,li {
 #footer .menu{overflow:hidden;padding-top:33px;}
 #footer .menu li{float:left;margin-right:20px;}
 #footer .menu li a{font-size:14px;line-height:20px;color:#fff;}
-#footer .addr{margin-top:10px;overflow:hidden;font-family:'notokr-regular';font-size:14px;line-height:20px;color:#fff;}
+#footer .addr{margin-top:10px;overflow:hidden;;font-size:14px;line-height:20px;color:#fff;}
 #footer .addr.eng {padding-top:50px;}
-#footer .addr li{float:left;padding-left:13px;margin-right:10px;background:url('images/foot_section.gif') no-repeat 0 3px;}
+#footer .addr li{float:left;padding-left:13px;margin-right:10px;}
 #footer .addr li:first-child, #footer .addr li.phone{clear:both;padding-left:0;background:none;}
-#footer .copy{font-family: 'notokr-regular';font-size:14px;line-height:20px;color:#fff;}
+#footer .copy{font-size:14px;line-height:20px;color:#fff;}
 
 
 .tabMenu01{position:relative;margin-top:30px;}
