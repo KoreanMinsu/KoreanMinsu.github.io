@@ -51,9 +51,7 @@
                         </label>
                         <div class="settings_actions vertical"><a data-action="choose_from_uploaded"><i class="fa fa-picture-o"></i>업로드 파일 중에 선택</a><a class="disabled" data-action="remove_current_image"><i class="fa fa-ban"></i>현재 첨부파일 삭제</a></div>
                         <div class="image_details"><label class="input_line image_title"><input type="text" placeholder="Title" /></label>
-                            <!--label.input_line.image_alt//input(type='text' placeholder='Alternative Text')-->
-                            <!--a.confirm(data-action='confirm_image_details')//i.fa.fa-check-circle-->
-                        </div>
+						</div>
                     </div>
                 </div>
             </div>
@@ -81,7 +79,7 @@
 
 			<div>
 				<h3 class="join_title">
-					<label for="name">게임연령</label>
+					<label for="name">게임시간</label>
 				</h3>
 				<span class="box int_nickname"> <input type="text" id="nickname" class="int" maxlength="20">
 				</span> <span class="error_next_box"></span>
@@ -91,7 +89,7 @@
 
 			<div>
 				<h3 class="join_title">
-					<label for="name">게임연령</label>
+					<label for="name">게임난이도</label>
 				</h3>
 				<span class="box int_nickname"> <input type="text" id="nickname" class="int" maxlength="20">
 				</span> <span class="error_next_box"></span>
@@ -105,12 +103,32 @@
 				</h3>
 
 				<div id="bir_wrap">
-					<!-- BIRTH_YY -->
-					<div id="bir_yy">
-						<span class="box"> <input type="text" id="yy" class="int" maxlength="4" placeholder="년(4자)">
+					
+					<!-- BIRTH_MM -->
+					<div id="bir_mm">
+						<span class="box"> <select id="mm" class="sel">
+								<option>선택</option>
+								<option value="01"></option>
+								<option value="02">2</option>
+								<option value="03">3</option>
+								<option value="04">4</option>
+								<option value="05">5</option>
+								<option value="06">6</option>
+								<option value="07">7</option>
+								<option value="08">8</option>
+								<option value="09">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+						</select>
 						</span>
 					</div>
 
+					<!-- BIRTH_DD -->
+					<div id="bir_dd">
+						<span class="box">분 ~
+						</span>
+					</div>
 					<!-- BIRTH_MM -->
 					<div id="bir_mm">
 						<span class="box"> <select id="mm" class="sel">
@@ -131,29 +149,18 @@
 						</span>
 					</div>
 
-					<!-- BIRTH_DD -->
 					<div id="bir_dd">
-						<span class="box"> <input type="text" id="dd" class="int" maxlength="2" placeholder="일">
+						<span class="box">분 
 						</span>
 					</div>
+
+					
 
 				</div>
 				<span class="error_next_box"></span>
 			</div>
 
-			<!-- GENDER -->
-			<div>
-				<h3 class="join_title">
-					<label for="gender">성별</label>
-				</h3>
-				<span class="box gender_code"> <select id="gender" class="sel">
-						<option>성별</option>
-						<option value="M">남자</option>
-						<option value="F">여자</option>
-				</select>
-				</span> <span class="error_next_box">필수 정보입니다.</span>
-			</div>
-
+			
 			<!-- EMAIL -->
 			<div>
 				<h3 class="join_title">
